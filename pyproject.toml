@@ -1,0 +1,9 @@
+[project]
+name = "pdfconverter"
+version = "0.1.0"
+description = "CLI tool to convert DOCX and PPTX to PDF"
+authors = [{ name = "Fusayaka" }]
+dependencies = ["pywin32"]
+
+[project.scripts]
+pdfconverter = "pdfconverter.cli:main"
