@@ -114,6 +114,16 @@ def main():
             "Folders are scanned recursively for supported files. "
         ),
     )
+    parser.add_argument(
+        "-o", "--output",
+        metavar="DIR",
+        default=None,
+        help=(
+            "Optional destination folder for the converted PDF files. "
+            "If omitted, each PDF is saved alongside its source file. "
+            "The folder will be created automatically if it does not exist. "
+        ),
+    )
     args = parser.parse_args()
 
     file_paths = collect_file_paths(args.paths)
