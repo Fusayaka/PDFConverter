@@ -23,14 +23,26 @@ pip install .
 ## Usage
 
 ### 1. Convert single file
+```bash
 pdfconverter file.docx
+```
 
 ### 2. Convert multiple files
+```bash
 pdfconverter a.docx b.pptx
+```
 
 ### 3. Convert folder
+```bash
 pdfconverter ./documents
+```
+
+### 4. Specify output directory
+```bash
+pdfconverter ./documents -o ./output
+```
 
 ## Notes
-- Output PDF is saved next to original file.
-- Existing PDFs will be overwritten.
+- By default, each PDF is saved in the same directory as its source file.
+- Use `-o` / `--output` to specify a custom output directory.
+- Existing PDF files with the same name will be overwritten.
