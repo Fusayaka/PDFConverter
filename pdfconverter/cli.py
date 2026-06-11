@@ -42,7 +42,7 @@ def init_com_applications(file_paths):
 
     if any(p.lower().endswith(".pptx") for p in file_paths):
         powerpoint = win32com.client.Dispatch("PowerPoint.Application")
-        powerpoint.Visible = False
+        powerpoint.Visible = True
 
     return word, powerpoint
 
